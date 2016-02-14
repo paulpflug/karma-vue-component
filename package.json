@@ -1,0 +1,45 @@
+{
+  "name": "karma-vue-component",
+  "description": "a tiny wrapper to load a vue-component with one function call",
+  "version": "0.0.0",
+  "homepage": "https://github.com/paulpflug/",
+  "author": {
+    "name": "Paul Pflugradt",
+    "email": "paul.pflugradt@gmail.com"
+  },
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paulpflug/karma-vue-component"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "peerDependencies": {
+    "vue": "^1.0.16"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.10.0",
+    "karma": "^0.13.21",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-mocha": "^0.2.1",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
+    "vue": "^1.0.16",
+    "webpack": "^1.12.13"
+  },
+  "keywords": [],
+  "readmeFilename": "README.md",
+  "scripts": {
+    "watch": "karma start --browsers Chrome --auto-watch",
+    "test": "karma start --browsers Chrome --single-run",
+    "build": "coffee --bare --no-header --compile --output lib/ src/*.coffee",
+    "preversion": "npm test",
+    "version": "npm run build && git add .",
+    "postversion": "git push && git push --tags && npm publish"
+  }
+}
