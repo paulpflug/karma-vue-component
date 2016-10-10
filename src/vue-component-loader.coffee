@@ -1,7 +1,7 @@
 # out: ../lib/vue-component-loader.js
-loadComp = (comp) ->
+loadComp = (comp,data) ->
   comp = Vue.extend(comp)
-  comp = new comp()
+  comp = new comp(data)
   comp.$mount().$appendTo(document.body)
   return comp
 unloadComp = (comp) ->
