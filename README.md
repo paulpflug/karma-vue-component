@@ -6,6 +6,8 @@ To fasten the testing of Vue components.
 
 ```
 npm install --save-dev karma-vue-component
+// vue@1.0
+npm install --save-dev karma-vue-component@1
 ```
 add `'vue-component'` to the frameworks in the karma.conf
 
@@ -34,6 +36,8 @@ comp = loadComp(require("../dev/someComp.vue"))
 
 ```
 ## Changelog
+- 2.0.0  
+compatible to vue@2  
 
 - 1.0.0  
 added data argument to `loadComp`
