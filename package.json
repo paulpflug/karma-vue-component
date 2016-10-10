@@ -1,7 +1,7 @@
 {
   "name": "karma-vue-component",
   "description": "a tiny wrapper to load a vue-component with one function call",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "homepage": "https://github.com/paulpflug/",
   "author": {
     "name": "Paul Pflugradt",
