@@ -1,4 +1,3 @@
-# out: ../lib/vue-component-loader.js
 loadComp = (comp,data) ->
   comp = Vue.extend(comp)
   comp = new comp(data)
