@@ -18,13 +18,15 @@ add `'vue-component'` to the frameworks in the karma.conf
 - adds the functions `loadComp` and `unloadComp` as globals
 
 ```js
-loadComp = function(comp,data) {
+loadComp = function(comp, data) {
   comp = Vue.extend(comp);
   comp = new comp(data);
-  comp.$mount().$appendTo(document.body);
+  document.body.appendChild(comp.$mount().$el);
   return comp;
 };
+
 unloadComp = function(comp) {
+  document.body.removeChild(comp.$el);
   return comp.$destroy();
 };
 ```

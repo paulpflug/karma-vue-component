@@ -28,8 +28,8 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-mocha": "^1.2.0",
     "karma-webpack": "^1.8.0",
-    "mocha": "^3.1.1",
-    "vue": "^1.0.0",
+    "mocha": "^3.1.2",
+    "vue": "^2.0.3",
     "webpack": "^1.13.2"
   },
   "keywords": [],
